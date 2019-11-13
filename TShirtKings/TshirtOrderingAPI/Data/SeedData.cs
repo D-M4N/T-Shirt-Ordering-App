@@ -15,7 +15,7 @@ namespace TshirtOrderingAPI.Api.Data
                 context.Products.AddRange(
                     new Product
                     {
-                        Name = "Squeaky Bone",
+                        Name = "Dalton Bessick",
 
                         Gender = "Male",
 
@@ -32,8 +32,27 @@ namespace TshirtOrderingAPI.Api.Data
                         ContactDetails = "0782006868"
 
 
+                    },
+                   
+                    new Product
+                    {
+                        Name = "Sponge Bob",
+
+                        Gender = "Female",
+
+                        ShirtSize = "Small",
+
+                        DateOfOrder = "December",
+
+                        ShirtName = "Crysis 3",
+
+                        ShippingAddress = "Under Water",
+
+                        EmailAddress = "BobSponge@UndertheSea.com",
+
+                        ContactDetails = "0213792424"
                     }
-                ) ;
+                );
 
                 context.SaveChanges();
             }
