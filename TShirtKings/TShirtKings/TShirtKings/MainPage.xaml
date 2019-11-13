@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtKings.MainPage"
+             BackgroundImageSource="crysisWelcome.jpg"
+             
+             >
+    <ScrollView>
+    <StackLayout>
+        
+        
+       
+
+        <Image 
+                
+            Source="CrysisSagaLogo.png"
+                 VerticalOptions="Start"
+                 HorizontalOptions="Center"
+            HeightRequest="200"
+              
+                
+        />
+
+            <Image 
+                
+            Source="WToWLogo.png"
+                 VerticalOptions="Start"
+                 HorizontalOptions="Center"
+           
+              
+                
+            />
+
+
+            <Label 
+                    
+                    Text="Crysis merchandise created by independent artists from around the globe. We print the highest quality crysis gifts and merch on the internet. My TeePublic. ... T-Shirts Tank Tops Hoodies Crewneck Sweatshirts Long Sleeve T-Shirts Baseball T-Shirts. Kids Apparel. Kids T-Shirts Kids Hoodie Kids Long Sleeve T-Shirt Onesie."
+                    
+                        TextColor="White" 
+                            HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                    Margin="15"
+                                     VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                            LineHeight="0.9"
+                        FontSize="30"
+                        
+            />
+
+            <Image 
+                
+                
+                Source="ClickHere.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                HeightRequest="150"
+                 
+                         
+                         
+            />
+        
+            <ImageButton 
+                
+                
+                Source="CrytekLogo.jpg"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                HeightRequest="150"
+                Clicked="ActivityOneButton_Clicked"      
+                         
+            />
+
+            <Image 
+                
+            Source="Knight.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            HeightRequest="100"
+              
+            
+                
+            />
+            <Label 
+                    
+                    Text="Created by D-M4N FOUNDATION."
+                    
+                        TextColor="Red" 
+                            HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                    
+                                     VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                            
+                        FontSize="20"
+                        
+            />
+
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtKings.OrderPage"
+             BackgroundImageSource="DetailsScreenBackDrop.jpg"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+
+                <Image 
+                
+                Source="CrysisSagaLogo.png"
+                    VerticalOptions="Start"
+                HorizontalOptions="Center"
+        
+              
+                
+                />
+
+                <Image 
+                
+                 Source="OrderPic.png"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                 HeightRequest="150"
+              
+            
+                 
+                />
+
+                <Label 
+                
+                Text="Name" 
+                     FontSize="20"
+                      TextColor="White"
+                Margin="12"
+                
+                />            
+            <Entry 
+                
+                Text="{Binding Name}"
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                />
+            
+            
+            <Label 
+                
+                Text="Gender"
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />            
+            <Entry 
+                
+                Text="{Binding Gender}"
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+            
+            <Label 
+                
+                Text="ShirtSize"
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />        
+            <Entry 
+                
+                Text="{Binding ShirtSize}" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+            
+            <Label 
+                
+                Text="DateOfOrder" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />            
+            <Entry 
+                
+                Text="{Binding DateOfOrder}" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+            
+            <Label 
+                
+                Text="ShirtName" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />            
+            <Entry 
+                
+                Text="{Binding ShirtName}" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+            
+            <Label 
+                
+                Text="ShippingAddress" 
+                      FontSize="20"
+                      TextColor="White"
+                Margin="12"
+                
+                />            
+            <Entry 
+                
+                Text="{Binding ShippingAddress}" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+
+                <Label 
+                
+                Text="EmailAddress" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+                <Entry 
+                
+                Text="{Binding EmailAddress}" 
+                      FontSize="20"
+                      TextColor="White"
+                Margin="12"
+                
+                />
+
+                <Label 
+                
+                Text="ContactDetails" 
+                      FontSize="20"
+                      TextColor="White"
+                Margin="12"
+                
+                />
+                <Entry 
+                
+                Text="{Binding ContactDetails}" 
+                      FontSize="20"
+                      TextColor="White"
+                Margin="12"
+                
+                />
+
+                <Label 
+                
+                Text="Done" 
+                     FontSize="20"
+                     TextColor="White"
+                Margin="12"
+                
+                />
+            
+            <Switch 
+                
+                IsToggled="{Binding Done}" 
+                
+                />
+            
+            <Button 
+                
+                Text="Save"  
+                
+                />
+
+                <Button
+                
+                Text="Delete" 
+                
+                />
+
+                <Button 
+                
+                Text="Cancel Order"  
+                Clicked="Cancel_Button"
+                />
+
+
+                <Image 
+                
+            Source="Knight.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            HeightRequest="100"
+              
+            
+                
+            />
+                <Label 
+                    
+                    Text="Created by D-M4N FOUNDATION."
+                        TextColor="Red" 
+                            HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                    FontSize="20"
+                        
+            />
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

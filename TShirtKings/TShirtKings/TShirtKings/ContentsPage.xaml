@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtKings.ContentsPage"
+             BackgroundImageSource="Fist.jpg"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+
+
+                <Image 
+                
+                 Source="CrysisSagaLogo.png"
+                        VerticalOptions="Start"
+                 HorizontalOptions="Center"
+           
+              
+                
+                  />
+            
+                <Grid>
+                <Image 
+                
+                 Source="CatalogIcon.png"
+                    VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                    HeightRequest="200"
+                 Margin="20"
+                
+                  />
+                    <Image 
+                
+                        Source="Equipment.png"
+                            VerticalOptions="Start"
+                                HorizontalOptions="End"
+                            HeightRequest="200"
+                        Margin="20"
+              
+                
+                  />
+                </Grid>
+
+
+                <Grid>
+                <Image 
+                
+                    Source="TshirtOne.jpg"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Center"
+                    HeightRequest="300"
+                    
+                  
+                />
+
+                <Label 
+                    
+                    Text="Crysis Chest Plate Body Armour T-Shirt Male And Female"
+                        TextColor="DarkOrange"
+                            HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                     VerticalOptions="Center"
+                                     Margin="15"
+                                VerticalTextAlignment="Center"
+                            HorizontalTextAlignment="Center"
+                        LineHeight="0.9"
+                    FontSize="30"
+                        
+                     />
+                </Grid>
+
+                     <Grid>
+                    <Image 
+                
+                        Source="TshirtTwo.jpg"
+                             VerticalOptions="Start"
+                             HorizontalOptions="Center"
+                        HeightRequest="300"
+                    
+                  
+                         />
+
+                    <Label 
+                    
+                    Text="Crysis Bow and Arrow Champion Warfare T-Shirt"
+                        TextColor="DarkOrange"
+                              HorizontalOptions="Center"
+                                 FontAttributes="Bold"
+                                     VerticalOptions="Center"
+                                     Margin="15"
+                                 VerticalTextAlignment="Center"
+                              HorizontalTextAlignment="Center"
+                        LineHeight="0.9"
+                    FontSize="30"
+                        
+                     />
+                    
+                     </Grid>
+
+                    <Grid>
+                    <Image 
+                
+                        Source="TshirtThree.jpg"
+                             VerticalOptions="Start"
+                             HorizontalOptions="Center"
+                        HeightRequest="300"
+                    
+                  
+                       />
+
+                    <Label 
+                    
+                    Text="Crysis 3 Black Sleeveless T-Shirt"
+                        TextColor="DarkOrange"
+                            HorizontalOptions="Center"
+                                 FontAttributes="Bold"
+                                     VerticalOptions="Center"
+                                     Margin="15"
+                                 VerticalTextAlignment="Center"
+                             HorizontalTextAlignment="Center"
+                        LineHeight="0.9"
+                    FontSize="30"
+                        
+            />
+                </Grid>
+
+                <Image 
+                
+                    Source="OrderNow.png"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Center"
+                    Aspect="Fill"
+                  
+                />
+                <ImageButton
+                    
+                    Source="BlueClickbutton.jpg"
+                        VerticalOptions="Start"
+                            HorizontalOptions="Center"
+                        HeightRequest="100"
+                    Clicked="OrderButton_Clicked"
+                    
+                    
+                    
+                />
+
+                <Image 
+                
+                    Source="Knight.png"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                    HeightRequest="100"
+              
+            
+                
+                     />
+            
+                <Label 
+                    
+                  Text="Created by D-M4N FOUNDATION."
+                       TextColor="Red" 
+                            HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                  FontSize="20"
+                        
+                     />
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
