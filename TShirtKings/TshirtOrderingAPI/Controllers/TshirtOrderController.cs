@@ -3,18 +3,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ContosoPets.Api.Data;
-using ContosoPets.Api.Models;
+using TshirtOrderingAPI.Api.Data;
+using TshirtOrderingAPI.Api.Models;
 
-namespace ContosoPets.Api.Controllers
+namespace TshirtOrderingAPI.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class TshirtOrderController : ControllerBase
     {
-        private readonly ContosoPetsContext _context;
+        private readonly ShirtInfo _context;
 
-        public TshirtOrderController(ContosoPetsContext context)
+        public TshirtOrderController(ShirtInfo context)
         {
             _context = context;
         }
@@ -44,14 +44,14 @@ namespace ContosoPets.Api.Controllers
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+            return CreatedAtAction(nameof(GetById), new { id = product.ID }, product);
         }
 
         // PUT action
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(long id, Product product)
         {
-            if (id != product.Id)
+            if (id != product.ID)
             {
                 return BadRequest();
             }

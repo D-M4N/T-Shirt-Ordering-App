@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using ContosoPets.Api.Data;
+using TshirtOrderingAPI.Api.Data;
 
 namespace TshirtOrderingAPI
 {
@@ -27,7 +27,7 @@ namespace TshirtOrderingAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ContosoPetsContext>(options =>
+            services.AddDbContext<ShirtInfo>(options =>
            options.UseInMemoryDatabase("ContosoPets"));
 
             services.AddControllers();

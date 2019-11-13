@@ -4,11 +4,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using ContosoPets.Api.Data;
+using TshirtOrderingAPI.Api.Data;
 
 using TshirtOrderingAPI;
 
-namespace ContosoPets.Api
+namespace TshirtOrderingAPI.Api
 
 {
     public class Program
@@ -33,7 +33,7 @@ namespace ContosoPets.Api
 
             using (var scope = scopeFactory.CreateScope())
             {
-                var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
+                var context = scope.ServiceProvider.GetRequiredService<ShirtInfo>();
 
                 if (context.Database.EnsureCreated())
                 {

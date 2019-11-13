@@ -2,13 +2,13 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ContosoPets.Api.Models;
+using TshirtOrderingAPI.Api.Models;
 
-namespace ContosoPets.Api.Data
+namespace TshirtOrderingAPI.Api.Data
 {
     public static class SeedData
     {
-        public static void Initialize(ContosoPetsContext context)
+        public static void Initialize(ShirtInfo context)
         {
             if (!context.Products.Any())
             {
@@ -16,14 +16,24 @@ namespace ContosoPets.Api.Data
                     new Product
                     {
                         Name = "Squeaky Bone",
-                        Price = 20.99m
-                    },
-                    new Product
-                    {
-                        Name = "Knotted Rope",
-                        Price = 12.99m
+
+                        Gender = "Male",
+
+                        ShirtSize = "Medium",
+
+                        DateOfOrder = "October",
+
+                        ShirtName = "Crysis",
+
+                        ShippingAddress = "Cape Town",
+
+                        EmailAddress = "djbessick@gmail.com",
+
+                        ContactDetails = "0782006868"
+
+
                     }
-                );
+                ) ;
 
                 context.SaveChanges();
             }
