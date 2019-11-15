@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using TshirtOrderingAPI.Api.Data;
+using TshirtOrderingAPI.Api.Models;
 
 namespace TshirtOrderingAPI.Api.Models
 {

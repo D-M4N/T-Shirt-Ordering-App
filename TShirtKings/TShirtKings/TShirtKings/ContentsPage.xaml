@@ -58,7 +58,8 @@
 
                 <Label 
                     
-                    Text="Crysis Chest Plate Body Armour T-Shirt Male And Female"
+                    Text="CRYTEK ONE
+                    Crysis Chest Plate Body Armour T-Shirt Male And Female"
                         TextColor="DarkOrange"
                             HorizontalOptions="Center"
                                 FontAttributes="Bold"
@@ -85,7 +86,8 @@
 
                     <Label 
                     
-                    Text="Crysis Bow and Arrow Champion Warfare T-Shirt"
+                    Text="CRYTEK TWO
+                        Crysis Bow and Arrow Champion Warfare T-Shirt"
                         TextColor="DarkOrange"
                               HorizontalOptions="Center"
                                  FontAttributes="Bold"
@@ -113,7 +115,8 @@
 
                     <Label 
                     
-                    Text="Crysis 3 Black Sleeveless T-Shirt"
+                    Text="CRYTEK THREE
+                        Crysis 3 Black Sleeveless T-Shirt"
                         TextColor="DarkOrange"
                             HorizontalOptions="Center"
                                  FontAttributes="Bold"
