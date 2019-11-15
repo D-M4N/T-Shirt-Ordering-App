@@ -186,7 +186,7 @@
             <Button 
                 
                 Text="Save"  
-                
+                Clicked="OnSaveClicked"
                 />
 
                 <Button

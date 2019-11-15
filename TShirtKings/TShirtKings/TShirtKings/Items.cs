@@ -68,11 +68,11 @@ namespace TShirtKings
                        shirtSizeEntry,
                        new Label { Text = "DateOfOrder" },
                        dateOfOrderEntry,
-                      new Label { Text = "ShirtName" },
+                       new Label { Text = "ShirtName" },
                        ShirtNameEntry,
                        new Label { Text = "ShippingAddress" },
                        shippingAddressEntry,
-                        new Label { Text = "EmailAddress" },
+                       new Label { Text = "EmailAddress" },
                        emailAddressEntry,
                        new Label { Text = "ContactDetails" },
                        contactDetailsEntry,
@@ -80,6 +80,7 @@ namespace TShirtKings
 
                        new Label { Text = "Done" },
                        doneSwitch,
+
                        saveButton,
                        
                        
