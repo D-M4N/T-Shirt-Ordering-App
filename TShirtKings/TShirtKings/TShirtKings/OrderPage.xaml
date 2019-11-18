@@ -10,6 +10,8 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
+            
+            
 
                 <Image 
                 
@@ -191,8 +193,8 @@
 
                 <Button
                 
-                Text="Delete" 
-                
+                Text="View Order" 
+                Clicked="OnViewOrderClicked"
                 />
 
                 <Button 

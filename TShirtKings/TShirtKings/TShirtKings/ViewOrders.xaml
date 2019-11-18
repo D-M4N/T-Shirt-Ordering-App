@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtKings.ViewOrders"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView 
+                ItemsSource="{Binding TShirtOrders}" 
+                HasUnevenRows="True" 
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid 
+                                    Margin="7"
+                                >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition 
+                                            Height="Auto" 
+                                        />
+                                        <RowDefinition 
+                                            Height="Auto" 
+                                        />
+                                        <RowDefinition 
+                                            Height="Auto" 
+                                        />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition 
+                                            Width="Auto"
+                                        />
+                                        <ColumnDefinition 
+                                            Width="Auto"
+                                        />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label 
+                                           Text="ORDER INFORMATION" 
+                                           FontAttributes="Bold" 
+                                           Grid.Row="0" 
+                                           Grid.Column="0"
+                                    />
+                                    
+                                    <Label 
+                                           Text="Name" 
+                                           FontAttributes="Bold" 
+                                           Grid.Row="1" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="{Binding Name}"  
+                                           Grid.Row="2" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="Gender" 
+                                           FontAttributes="Bold" 
+                                           Grid.Row="1" 
+                                           Grid.Column="1"
+                                    />
+                                    <Label 
+                                           Text="{Binding Gender}" 
+                                           Grid.Row="2" 
+                                           Grid.Column="1" 
+                                    />
+
+                                    <Label 
+                                           Text="ShirtSize"
+                                           FontAttributes="Bold" 
+                                           Grid.Row="1" 
+                                           Grid.Column="2"
+                                    />
+                                    <Label 
+                                           Text="{Binding ShirtSize}"  
+                                           Grid.Row="2" 
+                                           Grid.Column="2"
+                                    />
+                                    <Label 
+                                           Text="DateOfOrder"
+                                           FontAttributes="Bold" 
+                                           Grid.Row="3" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="{Binding DateOfOrder}"   
+                                           Grid.Row="4" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="ShirtName"
+                                           FontAttributes="Bold" 
+                                           Grid.Row="3" 
+                                           Grid.Column="1"
+                                    />
+                                    <Label 
+                                           Text="{Binding ShirtName}"    
+                                           Grid.Row="4" 
+                                           Grid.Column="1"
+                                    />
+                                    <Label 
+                                           Text="ShippingAddress"
+                                           FontAttributes="Bold" 
+                                           Grid.Row="3" 
+                                           Grid.Column="2"
+                                    />
+                                    <Label 
+                                           Text="{Binding ShippingAddress}"    
+                                           Grid.Row="4" 
+                                           Grid.Column="2"
+                                    />
+                                    <Label 
+                                           Text="EmailAddress" 
+                                           FontAttributes="Bold" 
+                                           Grid.Row="5" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="{Binding EmailAddress}"     
+                                           Grid.Row="6" 
+                                           Grid.Column="0"
+                                    />
+                                    <Label 
+                                           Text="ContactDetails"  
+                                           FontAttributes="Bold" 
+                                           Grid.Row="5" 
+                                           Grid.Column="1"
+                                    />
+                                    <Label 
+                                           Text="{Binding ContactDetails}"    
+                                           Grid.Row="6" 
+                                           Grid.Column="1"
+                                    />
+
+                                    
+
+
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button
+             Text="CONFIRM ORDERS"
+             Clicked="OnConfirmOrderClicked"
+            ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
