@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -45,6 +45,35 @@ namespace TShirtKings
                 await DisplayAlert("Exceptions", "Try Again", "ok");
             }
         }
+
+
+        private async void Adress_Button(object sender, EventArgs e)
+        
+
+
+           // public async Task NavigateToBuilding25()
+            {
+                var placemark = new Placemark
+                {
+                    /*
+                    CountryName = "United States",
+                    AdminArea = "WA",
+                    Thoroughfare = "Microsoft Building 25",
+                    Locality = "Redmond"
+                    */
+
+                    CountryName = "South Africa",
+                    AdminArea = "MP",
+                    Thoroughfare = "The Cedars Avenue 28",
+                    Locality = "Rocklands"
+                };
+                var options = new MapLaunchOptions { Name = "The Cedars Avenue 28" };
+
+                await Map.OpenAsync(placemark, options);
+            }
+        
+
+
         /* var client = new HttpClient();
 
          var url = "https://10.0.2.2:5001/TshirtOrder";

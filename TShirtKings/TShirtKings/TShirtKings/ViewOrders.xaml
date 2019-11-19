@@ -145,10 +145,14 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button
-             Text="CONFIRM ORDERS"
-             Clicked="OnConfirmOrderClicked"
-            ></Button>
+                 <Button
+                     Text="CONFIRM ORDERS"
+                      Clicked="OnConfirmOrderClicked"
+                  ></Button>
+                 <Button
+                     Text="CONFIRM ADRESS"
+                     Clicked="Adress_Button"
+                 ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
