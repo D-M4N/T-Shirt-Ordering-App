@@ -15,6 +15,8 @@ namespace TShirtKings
     public partial class ViewOrders : ContentPage
     {
         public List<TShirtTable> TShirtOrders { get; set; }
+
+        private TShirtTable Orders;
         public ViewOrders()
         {
             InitializeComponent();
@@ -64,7 +66,24 @@ namespace TShirtKings
 
                 await Map.OpenAsync(placemark, options);
             }
-        
+
+        private async void OnTRACKPackageClicked(object sender, EventArgs e)
+        {
+            if (Orders != null)
+            {
+                var placemark = new Placemark
+                {
+                    Thoroughfare = Orders.ShippingAddress
+                };
+                var options = new MapLaunchOptions { Name = Orders.Name };
+                await Map.OpenAsync(placemark, options);
+            }
+        }
+
+        private void SelectedTShirtOrder(object sender, SelectedItemChangedEventArgs e)
+        {
+            Orders = e.SelectedItem as TShirtTable;
+        }
 
 
         /* var client = new HttpClient();
