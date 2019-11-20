@@ -55,13 +55,6 @@ namespace TShirtKings
             {
                 var placemark = new Placemark
                 {
-                    /*
-                    CountryName = "United States",
-                    AdminArea = "WA",
-                    Thoroughfare = "Microsoft Building 25",
-                    Locality = "Redmond"
-                    */
-
                     CountryName = "South Africa",
                     AdminArea = "MP",
                     Thoroughfare = "The Cedars Avenue 28",
