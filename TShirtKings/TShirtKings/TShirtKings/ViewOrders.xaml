@@ -158,7 +158,7 @@
                  <Button
                      
                      Text="CONFIRM ADDRESS"
-                     Clicked="OnTRACKPackageClicked"
+                     Clicked="AddressButton_Clicked"
                  ></Button>
         </StackLayout>
     </ContentPage.Content>

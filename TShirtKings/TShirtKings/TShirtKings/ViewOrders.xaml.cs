@@ -67,7 +67,7 @@ namespace TShirtKings
                 await Map.OpenAsync(placemark, options);
             }
 
-        private async void OnTRACKPackageClicked(object sender, EventArgs e)
+        private async void AddressButton_Clicked(object sender, EventArgs e)
         {
             if (Orders != null)
             {
