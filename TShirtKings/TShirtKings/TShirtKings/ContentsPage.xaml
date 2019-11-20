@@ -29,7 +29,7 @@
                  Source="CatalogIcon.png"
                     VerticalOptions="Start"
                         HorizontalOptions="Start"
-                    HeightRequest="200"
+                    HeightRequest="240"
                  Margin="20"
                 
                   />
@@ -38,7 +38,7 @@
                         Source="Equipment.png"
                             VerticalOptions="Start"
                                 HorizontalOptions="End"
-                            HeightRequest="200"
+                            HeightRequest="230"
                         Margin="20"
               
                 
@@ -61,7 +61,7 @@
                     
                     Text="CRYTEK ONE
                     Crysis Chest Plate Body Armour T-Shirt Male And Female"
-                        TextColor="DarkOrange"
+                        TextColor="Red"
                             HorizontalOptions="Center"
                                 FontAttributes="Bold"
                                      VerticalOptions="Center"
@@ -70,6 +70,7 @@
                             HorizontalTextAlignment="Center"
                         LineHeight="0.9"
                     FontSize="30"
+                    
                         
                      />
                 </Grid>
@@ -89,7 +90,7 @@
                     
                     Text="CRYTEK TWO
                         Crysis Bow and Arrow Champion Warfare T-Shirt"
-                        TextColor="DarkOrange"
+                        TextColor="Red"
                               HorizontalOptions="Center"
                                  FontAttributes="Bold"
                                      VerticalOptions="Center"
@@ -118,7 +119,7 @@
                     
                     Text="CRYTEK THREE
                         Crysis 3 Black Sleeveless T-Shirt"
-                        TextColor="DarkOrange"
+                        TextColor="Red"
                             HorizontalOptions="Center"
                                  FontAttributes="Bold"
                                      VerticalOptions="Center"
@@ -136,7 +137,7 @@
                     Source="OrderNow.png"
                          VerticalOptions="Start"
                          HorizontalOptions="Center"
-                    Aspect="Fill"
+                    Aspect="400"
                   
                 />
                 <ImageButton

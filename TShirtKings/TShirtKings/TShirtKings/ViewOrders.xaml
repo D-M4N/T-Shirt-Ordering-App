@@ -51,7 +51,8 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="1" 
                                            Grid.Column="0"
-                                    />
+                                        BackgroundColor="Aqua"
+                                      />
                                     <Label 
                                            Text="{Binding Name}"  
                                            Grid.Row="2" 
@@ -62,6 +63,7 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="1" 
                                            Grid.Column="1"
+                                        BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding Gender}" 
@@ -74,6 +76,7 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="1" 
                                            Grid.Column="2"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding ShirtSize}"  
@@ -85,6 +88,7 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="3" 
                                            Grid.Column="0"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding DateOfOrder}"   
@@ -96,17 +100,20 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="3" 
                                            Grid.Column="1"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding ShirtName}"    
                                            Grid.Row="4" 
                                            Grid.Column="1"
+                                        
                                     />
                                     <Label 
                                            Text="ShippingAddress"
                                            FontAttributes="Bold" 
                                            Grid.Row="3" 
                                            Grid.Column="2"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding ShippingAddress}"    
@@ -118,6 +125,7 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="5" 
                                            Grid.Column="0"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding EmailAddress}"     
@@ -129,17 +137,14 @@
                                            FontAttributes="Bold" 
                                            Grid.Row="5" 
                                            Grid.Column="1"
+                                           BackgroundColor="Aqua"
                                     />
                                     <Label 
                                            Text="{Binding ContactDetails}"    
                                            Grid.Row="6" 
                                            Grid.Column="1"
                                     />
-
-                                    
-
-
-                                </Grid>
+                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
@@ -150,7 +155,7 @@
                       Clicked="OnConfirmOrderClicked"
                   ></Button>
                  <Button
-                     Text="CONFIRM ADRESS"
+                     Text="CONFIRM ADDRESS"
                      Clicked="Adress_Button"
                  ></Button>
         </StackLayout>

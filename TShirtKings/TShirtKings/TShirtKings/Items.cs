@@ -28,6 +28,7 @@ namespace TShirtKings
 
                var shippingAddressEntry = new Entry();
                shippingAddressEntry.SetBinding(Entry.TextProperty, "ShippingAddress");
+                
 
                var emailAddressEntry = new Entry();
                emailAddressEntry.SetBinding(Entry.TextProperty, "EmailAddress");
