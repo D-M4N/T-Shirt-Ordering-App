@@ -9,6 +9,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace TShirtKings
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -32,29 +33,45 @@ namespace TShirtKings
 
         private async void OnConfirmOrderClicked(object sender, EventArgs e)
         {
-            var client = new HttpClient(new HttpClientHandler());
-            var url = "https://10.0.2.2:5001/TshirtOrder";
-            var TShirttable = new TShirtTable();
-            var json = JsonConvert.SerializeObject(TShirttable);
-            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-            try
+
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
             {
-                var response = await client.PostAsync(url, content);
-                await DisplayAlert("Response Message", response.ReasonPhrase, "ok");
+                // Connection to internet is available
+                var client = new HttpClient(new HttpClientHandler());
+                var url = "https://10.0.2.2:5001/TshirtOrder";
+                var TShirttable = new TShirtTable();
+                var json = JsonConvert.SerializeObject(TShirttable);
+                var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+                try
+                {
+                    var response = await client.PostAsync(url, content);
+                    await DisplayAlert("Response Message", response.ReasonPhrase, "ok");
+                }
+                catch (Exception)
+                {
+                    await DisplayAlert("Exceptions", "Try Again", "ok");
+                }
+
             }
-            catch (Exception)
+            else
             {
-                await DisplayAlert("Exceptions", "Try Again", "ok");
+                await DisplayAlert("CHECK YOUR DATA NOOB", "Please check internet connection", "Thank you");
             }
+
+           
+
+           
         }
 
 
         private async void Adress_Button(object sender, EventArgs e)
         
-
-
-           // public async Task NavigateToBuilding25()
+            // public async Task NavigateToBuilding25()
             {
+
+
                 var placemark = new Placemark
                 {
                     CountryName = "South Africa",
@@ -77,6 +94,11 @@ namespace TShirtKings
                 };
                 var options = new MapLaunchOptions { Name = Orders.Name };
                 await Map.OpenAsync(placemark, options);
+            }
+
+            else
+            {
+                await DisplayAlert("CHECK YOUR DATA NOOB", "Please check internet connection", "Thank you");
             }
         }
 
